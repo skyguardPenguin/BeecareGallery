@@ -1,12 +1,14 @@
 from uuid import uuid4
 from django.db import models
-import os
-from django.utils.deconstruct import deconstructible
 import datetime
-from BeeGallery import settings
+
 from pathlib import Path
 
     
+
+
+
+
 
 today = datetime.datetime.now()
 def get_img_sighting(instance,filename):

@@ -16,12 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from BeeGallery import settings
-from buzzfeed import urls
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('buzzfeed.urls'))
+    path('', include('apps.buzzfeed.urls'))
 ]
 
 if settings.DEBUG:
