@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.buzzfeed.urls'))
+    path('', include('apps.sightings.urls'))
 ]
 
 if settings.DEBUG:

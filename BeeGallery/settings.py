@@ -70,7 +70,7 @@ BASE_APPS = [
 # |=====|     APLICACIONES LOCALES    |=====|
 # |=========================================|
 LOCAL_APPS = [
-    'apps.buzzfeed'
+    'apps.sightings'
 ]
 
 # |=========================================|
