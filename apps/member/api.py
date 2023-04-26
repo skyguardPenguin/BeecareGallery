@@ -1,18 +1,14 @@
-from rest_framework.decorators import action
-
-from .models import beephoto
-from .serializers import beephotoSerializer
+from rest_framework.decorators import  action
+from .models import memberphoto
+from .serializers import memberphotoSerializer
 from rest_framework.response import Response
-
 from rest_framework import viewsets, permissions
 from django.http import HttpResponse
 
-
-class beephotoViewSet(viewsets.ModelViewSet):
-    queryset = beephoto.objects.all()
-    permission_classes = [permissions.IsAuthenticated]
-    serializer_class = beephotoSerializer
-
+class memberphotoViewSet(viewsets.ModelViewSet):
+    queryset = memberphoto.objects.all()
+    permission_classes= [permissions.IsAuthenticated]
+    serializer_class = memberphotoSerializer
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
